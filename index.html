@@ -1,0 +1,138 @@
+<!DOCTYPE html> <!-- All that is required for HTML5 -->
+<html lang="en"> <!-- lang="en" is required to help screen readers and search engines -->
+    <head>
+        <meta charset="utf-8"> <!-- utf-8 is set to prevent security vulnerabilities -->
+        <title>Fishing Trip</title>
+        <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet"> <!-- google font import -->
+        <link rel="stylesheet" type="text/css" href="css/cssshake.min.css">
+        <link rel="stylesheet" href="css/style.css"> <!-- stylesheet is what it is getting, type is optional in HTML5 -->
+    </head>
+    <body>
+        <div id="jump-to-nav">Jump to: <!-- this is the hidden content that brings users with a screen reader to nav -->
+        </div>
+        <div id="intro">
+            <img src="images/intropage.png">
+            <h1 class="title"> a fishing trip </h1>
+            <h5 class="subtitle">the ultimate pass time</h5>
+        </div>
+        <div id="conclusion">
+            <img src="images/intropage.png">
+            <h5 class="subtitle subtitle--first">Spend a day fishing.</h5>
+            <h5 class="subtitle">It's the most relaxing thing ever!!</h5>
+        </div>
+        <div class="background">
+            <img src="images/bg.png">
+            <div id="full-boat">
+                <div class="rock">
+                    <img id="basket" src="images/boat/basket.png">
+                    <img id="load-basket" src="images/boat/fish_in_basket.png">
+                    <img id="full-basket" src="images/boat/multiple_fish.png">
+                    <img id="sitting_man" src="images/boat/sitting_man.png">
+                    <img id="man_with_gear" src="images/boat/man_with_gear.png">
+                    <div id="thread"></div>
+                    <div id="thread_dipped"></div>
+                    <img id="hook" src="images/boat/hook.png">
+                    <img id="fishing_gear" src="images/boat/fishing_gear.png">
+                    <img id="motor" src="images/boat/motor.png">
+                </div>
+                <img id="boat_shadow" src="images/boat/boat_shadow.png">
+                <div class="rock">
+                    <img id="boat" src="images/boat/boat.png">
+                </div>
+                <img id="boat_ripples" src="images/boat/boat_ripples.png">
+                <div id="thought-bubble">
+                    <img id="thought-bubble-img" src="images/boat/thought_bubble.png">
+                    <p id="thought">I have caught enough fish for the day.</p>
+                </div>
+            </div>
+
+            <div id="reverse-full-boat">
+                <div class="rock">
+                    <img id="reverse-boat" src="images/reversedirection.png">
+                </div>
+            </div>
+
+            <img id="dock" src="images/dock.png">
+            <img id="standing_man" src="images/enter-man.png">
+            <img id="ripples" src="images/ripples.png">
+
+            <img class="fish fish1" src="images/fish.png">
+            <img class="fish fish2" src="images/fish.png">
+            <img class="fish fish3" src="images/fish.png">
+            <img class="fish fish4" src="images/fish.png">
+            <img class="fish fish5" src="images/fish.png">
+            <img class="fish fish6" src="images/fish.png">
+
+            <!-- Prompts -->
+            <div id="intro_prompt1">
+                <p>Click the boat to start fishing.</p>
+                <img class="arrow" src="images/arrow.png">
+            </div>
+
+            <div id="conclusion_prompt1">
+                <p>Click the boat to go fishing again.</p>
+                <img class="arrow" src="images/arrow.png">
+            </div>
+
+            <div id="scene1_prompt1">
+                <p>Click the man to get into the boat.</p>
+                <img class="arrow" src="images/arrow.png">
+            </div>
+
+            <div id="scene1_prompt2">
+                <p>Click the engine to get going.</p>
+                <img class="arrow" src="images/arrow.png">
+            </div>
+
+            <div id="scene2_prompt1">
+                <p>Click the fishing gear to start fishing.</p>
+                <img class="arrow" src="images/arrow.png">
+            </div>
+
+            <div id="scene3_prompt1">
+                <p>Click any of the fish to catch it.</p>
+                <img class="arrow" src="images/arrow.png">
+            </div>
+
+            <div id="scene3_prompt2">
+                <p>Click the fishing gear to wind it.</p>
+                <img class="arrow" src="images/arrow.png">
+            </div>
+
+            <div id="scene4_prompt1">
+                <p>Click the basket to store fish.</p>
+                <img class="arrow" src="images/arrow.png">
+            </div>
+            <div id="scene5_prompt1">
+                <p>Click the engine to get going.</p>
+                <img class="arrow" src="images/arrow.png">
+            </div>
+        </div>
+        <div class="scene-overlay">
+        </div>
+
+        <!-- Audio files -->
+        <audio id="boat-start-sound">
+            <source src="sounds/boat-start.mp3" type="audio/mpeg">
+            <source src="sounds/boat-start.wav" type="audio/wav">
+        </audio>
+        <audio id="winding-sound">
+            <source src="sounds/winding.mp3" type="audio/mpeg">
+            <source src="sounds/winding.wav" type="audio/wav">
+        </audio>
+        <audio id="ripple-sound">
+            <source src="sounds/ripple.mp3" type="audio/mpeg">
+            <source src="sounds/ripple.wav" type="audio/wav">
+        </audio>
+        <audio id="background-sound">
+            <source src="sounds/background.mp3" type="audio/mpeg">
+            <source src="sounds/background.wav" type="audio/wav">
+        </audio>
+    </body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/jquery-css-rotate-scale.js"></script>
+    <script src="js/style.js"></script> <!-- discussion of Charset and type attributes not used -->
+</html>

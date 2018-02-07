@@ -1,0 +1,583 @@
+/*
+Project Name: A Fishing Trip #
+Description: This project is to create a story telling website on a fishing trip
+Author: Meenakshi Kunduru
+Version: 1.0
+License: 
+
+Tags: (optional)
+
+General comments (optional)
+
+Table of Contents in CSS
+1. Global
+2. Links
+3. Headings
+4. Header
+5. Navigation
+6. Middle
+7. Forms
+8. Extras
+9. Footer
+*/
+
+/* 1. Global */
+html,body  { 
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+    max-width: 1280px;
+    font-family: 'Boogaloo', cursive;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 0.85px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+  
+/* 2. Links */
+#jump-to-nav { 
+    position: absolute;
+    overflow: hidden;
+    left:-3px;
+    width: 1px;
+    height: 1px;
+}
+/* 3. Headings */
+
+/* 4. Header */
+
+/* 5. Navigation 
+
+/* 6. Middle */
+
+#intro {
+    position: absolute;
+    width: 100%;
+    max-width: 1280px; 
+    color: #4d4d4d;
+    z-index: 300;
+    margin: 0 auto;
+}
+
+#conclusion {
+    position: absolute;
+    width: 100%;
+    max-width: 1280px; 
+    color: #4d4d4d;
+    z-index: 300;
+    display: none;
+}
+
+#intro .title {
+    position: absolute;
+    top: 100px;
+    left: 425px;
+    font-family: 'Concert One', cursive;
+    font-size: 72px;
+}
+
+#intro .subtitle {
+    position: absolute;
+    top: 160px;
+    left: 475px;
+    font-family: 'Rancho', cursive;
+    font-size: 48px;
+}
+
+#conclusion .subtitle {
+    position: absolute;
+    top: 150px;
+    left: 275px;
+    font-family: 'Concert One', cursive;
+    font-size: 48px;
+}
+
+#conclusion .subtitle--first {
+    top: 80px;
+    left: 425px;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    max-width: 1280px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#full-boat {
+    position: absolute;
+    top: 330px;
+    left: 200px;
+    transform: scale(0.7);
+}
+
+#reverse-full-boat {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    transform: scale(0.7);
+    display: none;
+}
+
+#full-boat.small {
+    transform: scale(0.4);
+    top: 525px;
+    left: 600px;
+}
+
+#boat {
+    position: absolute;
+}
+
+#reverse-boat {
+    position: absolute;
+}
+
+#sitting_man {
+    position: absolute;
+    bottom: -5px;
+    left: 200px;
+    display: none;
+}
+
+#man_with_gear {
+    position: absolute;
+    bottom: -5px;
+    left: 200px;
+    display: none;
+}
+
+#thread {
+    position: absolute;
+    bottom: 355px;
+    left: 681px;
+    height: 25px;
+    width: 1px;
+    background-color: #761c19;
+    display: none;
+}
+
+#thread_dipped {
+    position: absolute;
+    bottom: -65px;
+    left: 681px;
+    height: 0;
+    width: 2px;
+    background-color: #761c19;
+    opacity: 0.3;
+}
+
+#hook {
+    position: absolute;
+    bottom: 331px;
+    left: 670px;
+    display: none;
+}
+
+#fishing_gear {
+    position: absolute;
+    bottom: -35px;
+    left: -130px;
+    display: none;
+}
+
+#basket {
+    position: absolute;
+    bottom: -40px;
+    left: 80px;
+    display: none;
+}
+
+#load-basket {
+    position: absolute;
+    bottom: -40px;
+    left: 80px;
+    display: none;
+}
+
+#full-basket {
+    position: absolute;
+    bottom: -40px;
+    left: 80px;
+    display: none;
+}
+
+#motor {
+    position: absolute;
+    bottom: -90px;
+    left: -50px;
+}
+
+#boat_ripples {
+    position: absolute;
+    top: 65px;
+    left: 30px;
+}
+
+#thought-bubble {
+    color: #4d4d4d;
+    width: 156px;
+    position: absolute;
+    top: -400px;
+    left: 345px;
+    display: none;
+}
+
+#thought {
+    position: relative;
+    top: -180px;
+    left: 18px;
+}
+
+#boat_shadow {
+    position: absolute;
+    top: 105px;
+    left: 0;
+}
+
+#dock {
+    position: absolute;
+    bottom: 6px;
+    left: 160px;
+}
+
+#standing_man {
+    position: absolute;
+    top: 60px;
+    left: 300px;
+}
+
+#ripples {
+    position: absolute;
+    top: 325px;
+    left: 600px;
+    display: none;
+    transform: scale(0.6);
+}
+
+.fish {
+    position: absolute;
+    opacity: 0.6;
+    display: none;
+}
+
+.scene-overlay {
+    position: absolute;
+    border-radius: 50%;
+    height: 0;
+    width: 0;
+    top: 50%;
+    left: 50%;
+    z-index: 750;
+    background-color: #FFE000;
+}
+
+
+/* Prompts */
+#intro_prompt1 {
+    position: absolute;
+    width: 175px;
+    top: 380px;
+    left: 650px;
+    z-index: 400;
+    display: none;
+}
+
+#intro_prompt1 .arrow {
+    position: relative;
+    left: 130px;
+    bottom: 15px;
+}
+
+#conclusion_prompt1 {
+    position: absolute;
+    width: 200px;
+    top: 380px;
+    left: 650px;
+    z-index: 400;
+    display: none;
+}
+
+#conclusion_prompt1 .arrow {
+    position: relative;
+    left: 130px;
+    bottom: 15px;
+}
+
+#scene1_prompt1 {
+    position: absolute;
+    width: 175px;
+    top: 100px;
+    left: 150px;
+    display: none;
+}
+
+#scene1_prompt1 .arrow {
+    position: relative;
+    left: 130px;
+    bottom: 15px;
+}
+
+#scene1_prompt2 {
+    position: absolute;
+    width: 150px;
+    top: 180px;
+    left: 25px;
+    display: none;
+}
+
+#scene1_prompt2 .arrow {
+    position: relative;
+    left: 140px;
+    bottom: 40px;
+}
+
+#scene2_prompt1 {
+    position: absolute;
+    width: 200px;
+    top: 105px;
+    left: 150px;
+    display: none;
+}
+
+#scene2_prompt1 .arrow {
+    position: relative;
+    left: 150px;
+    bottom: 20px;
+}
+
+#scene3_prompt1 {
+    position: absolute;
+    width: 200px;
+    top: 300px;
+    left: 800px;
+    display: none;
+}
+
+#scene3_prompt1 .arrow {
+    position: relative;
+    left: 150px;
+    bottom: 40px;
+}
+
+#scene3_prompt2 {
+    position: absolute;
+    width: 200px;
+    top: 200px;
+    left: 595px;
+    display: none;
+}
+
+#scene3_prompt2 .arrow {
+    position: relative;
+    left: 30px;
+    bottom: 130px;
+    transform: rotate(-180deg);
+}
+
+#scene4_prompt1 {
+    position: absolute;
+    width: 150px;
+    top: 180px;
+    left: 170px;
+    display: none;
+}
+
+#scene4_prompt1 .arrow {
+    position: relative;
+    left: 130px;
+    bottom: 40px;
+}
+
+#scene5_prompt1 {
+    position: absolute;
+    width: 150px;
+    top: 185px;
+    left: 50px;
+    display: none;
+}
+
+#scene5_prompt1 .arrow {
+    position: relative;
+    left: 135px;
+    bottom: 40px;
+}
+
+
+/* 7. Forms */
+
+/* 8. Extras */
+
+/* 9. Footer */
+
+/* 10. Animations */
+
+.rock-boat {
+    -webkit-animation: rock-boat 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes rock-boat {
+    50%  { -webkit-transform: rotate(-2deg); }
+}
+
+.extend {
+    animation-name: thread;
+}
+
+.extend_dipped {
+    animation-name: thread-dipped;
+}
+
+.drop {
+    animation-name: hook;
+}
+
+.wind_thread {
+    animation-name: wind-thread;
+}
+
+.wind_thread_dipped {
+   animation-name: wind-thread-dipped; 
+}
+
+.wind_fish {
+    animation-name: wind-fish;
+}
+
+.wind_hook {
+    animation-name: wind-hook;
+}
+
+.extend,
+.drop,
+.extend_dipped,
+.wind_fish,
+.wind-hook,
+.wind-thread,
+.wind-thread-dipped {
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes thread {
+    0% {
+        height: 25px;
+        bottom: 355px;
+    }
+    80% {
+        height: 445px;
+        bottom: -65px;
+    }
+    100% {
+        height: 445px;
+        bottom: -65px;
+    }
+}
+
+@keyframes thread-dipped {
+    0% {
+        height: 0;
+        bottom: -65px;
+    }
+    80% {
+        height: 0;
+        bottom: -65px;
+    }
+    100% {
+        height: 105px;
+        bottom: -170px;
+    }
+}
+
+@keyframes hook {
+    0% {
+        bottom: 331px;
+    }
+    80% {
+        bottom: -89px;
+        opacity: 1;
+    }
+    81% {
+        bottom: -90px;
+        opacity: 0.3;
+    }
+    100% {
+        bottom: -194px;
+        opacity: 0.3;
+    }
+}
+
+@keyframes wind-thread {
+    0% {
+        height: 445px;
+        bottom: -65px;
+    }
+    20% {
+        height: 445px;
+        bottom: -65px;
+    }
+    100% {
+        height: 25;
+        bottom: 355px;
+    }
+}
+
+@keyframes wind-thread-dipped {
+    0% {
+        height: 105px;
+        bottom: -170px;
+    }
+    20% {
+        height: 0;
+        bottom: -65px;
+    }
+    100% {
+        height: 0;
+        bottom: -65px;
+    }
+}
+
+@keyframes wind-fish {
+    0% {
+        bottom: 135px;
+        opacity: 0.5;
+    }
+    20% {
+        bottom: 210px;
+        opacity: 0.5;
+    }
+    21% {
+        bottom: 211px;
+        opacity: 1;
+    }
+    100% {
+        bottom: 500px;
+        opacity: 1;
+    }
+}
+
+@keyframes wind-hook {
+    0% {
+        bottom: -194px;
+        opacity: 0.3;
+    }
+    20% {
+        bottom: -89px;
+        opacity: 0.3;
+    }
+    21% {
+        bottom: -90px;
+        opacity: 1;
+    }
+    100% {
+        bottom: 331px;
+        opacity: 1;
+    }
+}
+
